@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare AI</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="{% static 'images/favion.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static " vlog.css" %}">
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000000;
+            /* Add your preferred color */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            /* Add your preferred color */
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .menu-btn {
+            display: inline-block;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .flex-direction-right {
+            float: right;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 span {
+            border-bottom: 2px solid #4CAF50;
+            /* Add your preferred color */
+        }
+
+        .carousel-cell {
+            width: 100%;
+            /* Adjust as needed */
+            margin-right: 0;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            /* Adjust as needed */
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            flex-basis: 30%;
+            /* Adjust as needed */
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            background-color: #f2f2f2;
+            /* Add your preferred color */
+        }
+
+        .box img {
+            width: 100%;
+            height: auto;
+        }
+
+        .profile-img {
+            width: 15%;
+            /* Adjust as needed */
+            height: 20%;
+            /* Adjust as needed */
+            border-radius: 55%;
+        }
+
+        .profile-name {
+            margin-top: 10px;
+        }
+
+        .about_content {
+            font-size: 16px;
+        }
+
+        .sm-handle {
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            /* Add your preferred color */
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .youtubepages {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <img src="{% static "images/poster.jpg" %}" alt="Banner">
+        </div>
+    </header>
+    <nav>
+        <a class="menu-btn" href="#">Home</a>
+        <a class="menu-btn" href="#" target="_blank">Information</a>
+        <a class="menu-btn" href="#">About</a>
+        <a class="menu-btn" href="/">Predict</a>
+        <a class="menu-btn" href="#">Hospitals</a>
+        <a class="menu-btn flex-direction-right" href="#">Login/Signup</a>
+    </nav>
+    <main>
+        <section>
+            <h2> <span> Empowering Lives </span></h2>
+        </section>
+        <br><br><br>
+        <section class="youtubepages">
+            <iframe width="30%" height="45%" src="https://www.youtube.com/embed/8919Zm8Gi4U?si=tO_sKol1IHV3rsMR"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe> &nbsp;&nbsp;&nbsp;
+            <iframe width="30%" height="45%" src="https://www.youtube.com/embed/BVRnNbb9cLU?si=-nyPalFPWC41ivEv"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></iframe>&nbsp;&nbsp;&nbsp;
+            <iframe width="30%" height="45%" src="https://www.youtube.com/embed/3vuoNiV6OY8?si=kH9eF3_GTxCAY3C_"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </section>
+        <section class="youtubepages">
+
+            <iframe width="30%" height="45%" src="https://www.youtube.com/embed/8919Zm8Gi4U?si=tO_sKol1IHV3rsMR"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe> &nbsp;&nbsp;&nbsp;
+            <iframe width="30%" height="45%" src="https://www.youtube.com/embed/BVRnNbb9cLU?si=-nyPalFPWC41ivEv"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></iframe>&nbsp;&nbsp;&nbsp;
+            <iframe width="30%" height="45%" src="https://www.youtube.com/embed/3vuoNiV6OY8?si=kH9eF3_GTxCAY3C_"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </section>
+
+        <br><br><br>
+
+        <section>
+            <h2> <span> Information </span></h2>
+            <div class="box">
+                <div class="box1">
+                    <img class="image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAU_Tss-A4841Fex7NLsLO1krqnO9W4Jd8oA&usqp=CAU">
+                    <p>
+                    <h3><b> disease </b></h3>
+                    A disease is a particular abnormal condition that adversely affects the structure or function of all
+                    or part of an organism and is not immediately due to any external injury.
+                    </p>
+                    <a href="#"> Here's Why </a>
+                </div>
+
+                <div class="box2">
+                    <img class="image"
+                        src="https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blta401f2e7dad39503/620d844d9d54947c7f131b0a/illustration-industry-health.png">
+                    <p>
+                    <h3><b> Effects </b></h3>
+                    Diseases are often known to be medical conditions that are associated with specific signs and
+                    symptoms.
+                    </p>
+                    <a href="#"> Read More </a>
+                </div>
+
+                <div class="box3">
+                    <img class="image"
+                        src="https://images.pexels.com/photos/2383010/pexels-photo-2383010.jpeg?cs=srgb&dl=pexels-total-shape-2383010.jpg&fm=jpg">
+                    <p>
+                    <h3><b> Solutiion</b></h3>
+                    Imagine having a magic wand that makes businesses shine online. That's what we do! We're digital
+                    guides, helping start-up's and businesses master the art of attracting customers on the internet.
+                    </p>
+                    <a href="#"> Read More </a>
+                </div>
+            </div>
+        </section>
+        <br><br><br>
+
+        <section>
+            <h2><span> The Team </span></h2>
+
+            <img class="profile-img" src="{% static "images/Ekansh.jpeg" %}" alt="this is an image">
+            <h3 class="profile-name"> Ekansh Narayan Mishra </h3>
+            <div class="about_us">
+                <h5 class="about_content">
+                    I am Ekansh Narayan Mishra, currently pursuing B-Tech in CSE from Dronacharya Group of
+                    Institutions(greater Noida).I'm passionate about my work. I aim to combine my technical skills with
+                    my interests to create innovative solutions for a sustainable and healthy future.
+                </h5>
+            </div>
+            <div class="sm-handle">
+                <a class="linkdin-handle" href="https://www.linkedin.com/in/ajay-dandriyal-30b926252" target="_blank"
+                    rel=""><b><i class="fa fa-linkedin  linkdin-handle  fa-lg" aria-hidden="true"></i> Linkdin </b></a>
+                &nbsp;&nbsp;&nbsp;
+                <a class="insta-handle" href="https://instagram.com/about_govind_deshwal?igshid=MzRlODBiNWFlZA=="
+                    target="_blank" rel=""><b><i class="fa fa-instagram  insta-handle  fa-lg"></i> Instagram</b></a>
+                &nbsp;
+                &nbsp;&nbsp;
+                <a href="" target="_blank" rel=""><b><i class="fa fa-github github-handle  fa-lg"></i> Github </b></a>
+                &nbsp;&nbsp;&nbsp;
+            </div>
+            <br><br><br>
+            <img class="profile-img" src="{% static "images/priyam.jpeg" %}" alt="this is an image">
+            <h3 class="profile-name"> Priyam Tomar </h3>
+            <div class="about_us">
+                <h5 class="about_content">
+                    I am Priyam Tomar, currently pursuing B-Tech in CSE from Dronacharya Group of Institutions(greater
+                    Noida).I'm passionate about my work. I aim to combine my technical skills with my interests to
+                    create innovative solutions for a sustainable and healthy future.
+                </h5>
+            </div>
+            <div class="sm-handle">
+                <a class="linkdin-handle" href="https://www.linkedin.com/in/ajay-dandriyal-30b926252" target="_blank"
+                    rel=""><b><i class="fa fa-linkedin  linkdin-handle  fa-lg" aria-hidden="true"></i> Linkdin </b></a>
+                &nbsp;&nbsp;&nbsp;
+                <a class="insta-handle" href="https://instagram.com/about_govind_deshwal?igshid=MzRlODBiNWFlZA=="
+                    target="_blank" rel=""><b><i class="fa fa-instagram  insta-handle  fa-lg"></i> Instagram</b></a>
+                &nbsp;
+                &nbsp;&nbsp;
+                <a href="" target="_blank" rel=""><b><i class="fa fa-github github-handle  fa-lg"></i> Github </b></a>
+                &nbsp;&nbsp;&nbsp;
+            </div>
+
+            <br><br><br>
+
+            <img class="profile-img" src="{% static "images/govind.jpeg" %}" alt="this is an image">
+            <h3 class="profile-name"> Govind Deshwal </h3>
+            <div class="about_us">
+                <h5 class="about_content">
+                    I am Govind Deshwal, currently pursuing B-Tech in CSE from Dronacharya Group of Institutions(greater
+                    Noida).I'm passionate about my work. I aim to combine my technical skills with my interests to
+                    create innovative solutions for a sustainable and healthy future.
+                </h5>
+            </div>
+            <div class="sm-handle">
+                <a class="linkdin-handle" href="https://www.linkedin.com/in/ajay-dandriyal-30b926252" target="_blank"
+                    rel=""><b><i class="fa fa-linkedin  linkdin-handle  fa-lg" aria-hidden="true"></i> Linkdin </b></a>
+                &nbsp;&nbsp;&nbsp;
+                <a class="insta-handle" href="https://instagram.com/about_govind_deshwal?igshid=MzRlODBiNWFlZA=="
+                    target="_blank" rel=""><b><i class="fa fa-instagram  insta-handle  fa-lg"></i> Instagram</b></a>
+                &nbsp;
+                &nbsp;&nbsp;
+                <a href="" target="_blank" rel=""><b><i class="fa fa-github github-handle  fa-lg"></i> Github </b></a>
+                &nbsp;&nbsp;&nbsp;
+            </div>
+            <br><br><br>
+            <img class="profile-img" src="{% static "images/ajay1.jpeg" %}" alt="this is an image">
+            <h3 class="profile-name"> Ajay Dandriyal </h3>
+            <div class="about_us">
+                <h5 class="about_content">
+                    I am Ajay Dandriyal, currently pursuing B-Tech in CSE from Dronacharya Group of Institutions(greater
+                    Noida).I'm passionate about business and health. I aim to combine my technical skills with my
+                    interests to create innovative solutions for a sustainable and healthy future.
+                </h5>
+            </div>
+            <div class="sm-handle">
+                <a class="linkdin-handle" href="https://www.linkedin.com/in/ajay-dandriyal-30b926252" target="_blank"
+                    rel=""><b><i class="fa fa-linkedin  linkdin-handle  fa-lg" aria-hidden="true"></i> Linkdin </b></a>
+                &nbsp;&nbsp;&nbsp;
+                <a class="insta-handle" href="https://instagram.com/the_dandy_vines?igshid=NGVhN2U2NjQ0Yg=="
+                    target="_blank" rel=""><b><i class="fa fa-instagram  insta-handle  fa-lg"></i> Instagram</b></a>
+                &nbsp;
+                &nbsp;&nbsp;
+                <a href="" target="_blank" rel=""><b><i class="fa fa-github github-handle  fa-lg"></i> Github </b></a>
+                &nbsp;&nbsp;&nbsp;
+            </div>
+            <br><br>
+        </section>
+    </main>
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Refund Policy</a>
+        <a class="flex-direction-right" href="#">&copy; 2023 | Healthcare AI</a>
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>

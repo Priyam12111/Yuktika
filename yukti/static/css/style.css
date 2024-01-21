@@ -1,0 +1,603 @@
+:root {
+  --green: #16a085;
+  --black: #444;
+  --light-color: #777;
+  --box-shadow: 0.5rem 0.5rem 0 rgba(22, 160, 133, 0.2);
+  --text-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2);
+  --border: 0.2rem solid var(--green);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+body {
+  background: #eee;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  padding: 2rem 9%;
+}
+.btn {
+  box-shadow: var(--box-shadow);
+  display: inline-block;
+  padding: 0.7rem;
+  background-color: #fff;
+  color: var(--green);
+  border: var(--border);
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.btn .fa-angle-right {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--green);
+}
+.btn:hover {
+  background-color: var(--green);
+  color: #fff;
+}
+.btn:hover.btn .fa-angle-right {
+  background-color: #fff;
+  color: var(--green);
+  margin-left: 1rem;
+}
+.heading {
+  font-size: 5rem;
+  text-align: center;
+  color: #444;
+  text-shadow: var(--text-shadow);
+  padding-bottom: 2rem;
+}
+.heading span {
+  color: var(--green);
+}
+/* Hreader Start  */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  padding: 2rem 9%;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.header .logo {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+.header .logo .fa-heart-pulse {
+  color: var(--green);
+}
+.header .nav-bar a {
+  font-size: 1.7rem;
+  color: var(--light-color);
+  padding: 0 1rem;
+}
+.header #menu-bar {
+  font-size: 2.5rem;
+  color: var(--green);
+  background-color: #eee;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  display: none;
+}
+/* Hreader End  */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .header #menu-bar {
+    display: initial;
+  }
+  .header .nav-bar {
+    position: absolute;
+    top: 115%;
+    right: 2rem;
+    opacity: 0;
+    border: var(--border);
+    margin-top: 1.5rem;
+    margin-right: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    width: 30rem;
+    padding-top: 1rem;
+    transform-origin: right top;
+    box-shadow: var(--box-shadow);
+  }
+  .header .nav-bar.active {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  .header .nav-bar a {
+    font-size: 2rem;
+    padding: 1rem;
+    display: block;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+/* <--------------------------------------------------------------------------------------------------------------> */
+/* <--------------------------------------------------------------------------------------------------------------> */
+/* Home Section Start */
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 10rem;
+}
+.home .image {
+  flex: 1 1 45rem;
+  width: 100%;
+}
+.home .home-content {
+  flex: 1 1 45rem;
+  width: 100%;
+}
+.home .image img {
+  width: 100%;
+}
+.home .home-content h3 {
+  font-size: 4.5rem;
+  line-height: 1.8;
+  text-shadow: var(--text-shadow);
+  color: var(--black);
+}
+.home .home-content p {
+  color: var(--light-color);
+  font-size: 1.7rem;
+  line-height: 1.8;
+}
+@media (max-width: 991px) {
+  .home {
+    padding: 2rem;
+  }
+}
+.icons {
+  background: #fff;
+  padding: 5rem 9%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+.icons .box {
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 2rem 0;
+}
+.icons .box i {
+  display: block;
+  font-size: 4rem;
+  color: var(--green);
+  margin-bottom: 1rem;
+}
+.icons .box span {
+  color: var(--black);
+  font-size: 3.5rem;
+  font-weight: bolder;
+  text-shadow: var(--text-shadow);
+}
+.icons .box p {
+  color: var(--light-color);
+  font-size: 1.5rem;
+}
+@media (max-width: 991px) {
+  .icons {
+    padding: 2rem;
+  }
+}
+/* Home Section End */
+/* <--------------------------------------------------------------------------------------------------------------> */
+/* <--------------------------------------------------------------------------------------------------------------> */
+/* Services Section Start */
+.services .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.services .row .service-box {
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  background: #fff;
+}
+.services .row .service-box i {
+  color: var(--green);
+  font-size: 4rem;
+}
+.services .row .service-box h3 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  color: var(--black);
+}
+.services .row .service-box p {
+  color: var(--light-color);
+  font-size: 1.5rem;
+}
+/* Services Section End */
+
+.services .row .service-box .btn {
+  padding: 1rem;
+  font-size: 1.7rem;
+}
+.services .row .service-box .btn .fa-angle-right {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.services .row .service-box .btn:hover.btn .fa-angle-right {
+  color: var(--green);
+}
+@media (max-width: 991px) {
+  .services {
+    padding: 2rem;
+  }
+}
+/* <--------------------------------------------------------------------------------------------------------------> */
+/* <--------------------------------------------------------------------------------------------------------------> */
+/* About section Start  */
+.about {
+  background: #fff;
+}
+.about .heading {
+  color: var(--green);
+}
+.about .heading span {
+  color: var(--black);
+}
+.about .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+.about .about-content .image {
+  flex: 1 1 45rem;
+}
+.about .about-content .content {
+  flex: 1 1 45rem;
+  width: 100%;
+}
+.about .about-content .image img {
+  width: 100%;
+}
+.about .about-content .content h3 {
+  font-size: 4.5rem;
+  text-shadow: var(--text-shadow);
+  color: #444;
+}
+.about .about-content .content p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 1.8;
+}
+@media (max-width: 991px) {
+  .about {
+    padding: 2rem;
+  }
+}
+/* About section End  */
+/* <--------------------------------------------------------------------------------------------------------------> */
+/* <--------------------------------------------------------------------------------------------------------------> */
+/* Doctors section Start  */
+.doctors .doctors-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.doctors .doctors-content .doctor-info {
+  text-align: center;
+  flex: 1 1 35rem;
+  background: #fff;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+.doctors .doctors-content .doctor-info img {
+  height: 20rem;
+  border: var(--border);
+}
+.doctors .doctors-content .doctor-info h3 {
+  color: #444;
+  font-size: 2.5rem;
+  padding-top: 1.3rem;
+}
+.doctors .doctors-content .doctor-info span {
+  color: var(--green);
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+.doctors .doctors-content .doctor-info .social-icons i {
+  margin: 0.3rem;
+  font-size: 2rem;
+  color: var(--green);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: var(--border);
+  cursor: pointer;
+}
+.doctors .doctors-content .doctor-info .social-icons i:hover {
+  background: var(--green);
+  color: #fff;
+}
+@media (max-width: 991px) {
+  .doctors {
+    padding: 2rem;
+  }
+}
+/* Doctors section End  */
+/* <--------------------------------------------------------------------------------------------------------------> */
+/* <--------------------------------------------------------------------------------------------------------------> */
+/* Book section Start  */
+.book {
+  background: #fff;
+}
+.book .heading {
+  color: var(--green);
+}
+.book .heading span {
+  color: var(--black);
+}
+.book .book-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.book .book-content .image {
+  flex: 1 1 40rem;
+}
+.book .book-content .image img {
+  width: 100%;
+}
+.book .book-content .form-content {
+  width: 100%;
+  flex: 1 1 40rem;
+}
+.book .book-content .form-content form {
+  background: #fff;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+.book .book-content .form-content form h3 {
+  color: var(--black);
+  font-size: 3rem;
+}
+.book .book-content .form-content form input {
+  border-radius: 0.5rem;
+  width: 100%;
+  border: var(--border);
+  height: 5rem;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+.book .book-content .form-content form input::placeholder {
+  font-size: 1.7rem;
+  text-transform: none;
+}
+.book .book-content .form-content form .btn {
+  margin-top: 1rem;
+  padding: 1rem 4rem;
+  font-size: 1.7rem;
+}
+@media (max-width: 991px) {
+  .book {
+    padding: 2rem;
+  }
+  .book .book-content .form-content form input {
+    --border: 0.1rem solid var(--green);
+  }
+  .book .book-content .form-content form {
+    --border: 0.1rem solid var(--green);
+  }
+  /* Book section End  */
+}
+/* <--------------------------------------------------------------------------------------------------------------> */
+/* <--------------------------------------------------------------------------------------------------------------> */
+/* Review section Start  */
+.review .review-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.review .review-content .client-box {
+  position: relative;
+  padding: 2.5rem;
+  text-align: center;
+  background-color: #fff;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  z-index: 0;
+  overflow: hidden;
+}
+.review .review-content .client-box img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  border: 0.4rem solid #fff;
+}
+.review .review-content .client-box h3 {
+  font-size: 2.3rem;
+  color: #fff;
+}
+.review .review-content .client-box .stars i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.review .review-content .client-box p {
+  color: var(--light-color);
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-top: 6rem;
+}
+.review .review-content .client-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--green);
+  height: 20rem;
+  width: 120%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  z-index: -1;
+}
+@media (max-width: 991px) {
+  .review {
+    padding: 2rem;
+  }
+}
+/* Review section End  */
+/* <--------------------------------------------------------------------------------------------------------------> */
+/* <--------------------------------------------------------------------------------------------------------------> */
+/* blog section start  */
+.blog {
+  background: #fff;
+}
+.blog .blog-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.blog .blog-content .box {
+  border-radius: 0.5rem;
+  background: #fff;
+  padding: 2rem;
+  border: var(--border);
+  box-shadow: var(--border);
+}
+.blog .blog-content .box .image {
+  height: 20rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+.blog .blog-content .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.blog .blog-content .box:hover img {
+  transform: scale(1.1);
+}
+.blog .blog-content .box .icons-box {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog .blog-content .box .icons-box a {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+.blog .blog-content .box .icons-box i {
+  color: var(--green);
+  font-size: 1.5rem;
+}
+.blog .blog-content .box h3 {
+  font-size: 3rem;
+  color: var(--black);
+}
+.blog .blog-content .box p {
+  font-size: 1.5rem;
+  color: #777;
+}
+@media (max-width: 991px) {
+  .blog {
+    padding: 2rem;
+  }
+}
+/* blog section End  */
+/* <--------------------------------------------------------------------------------------------------------------> */
+/* <--------------------------------------------------------------------------------------------------------------> */
+/* footer Start  */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+  padding: 3rem 9%;
+}
+
+.footer .box h3 {
+  font-size: 2.5rem;
+  color: #333;
+  padding-bottom: 1rem;
+}
+.footer .box a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: var(--light-color);
+  text-transform: none;
+}
+
+.footer .box a:hover i {
+  padding-right: 2rem;
+}
+
+.footer .box a i {
+  color: var(--green);
+  padding-right: 0.8rem;
+}
+
+.footer-bottom {
+  border-top: 0.1rem solid #ccc;
+  padding: 3rem 0;
+  margin: 0 10rem;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 2rem;
+  color: var(--light-color);
+  line-height: 1.8;
+}
+.footer-bottom p span {
+  color: var(--green);
+}
+@media (max-width: 991px) {
+  .footer {
+    padding: 2rem;
+  }
+}
+/* footer End  */
+/* <--------------------------------------------------------------------------------------------------------------> */
+/* <--------------------------------------------------------------------------------------------------------------> */
